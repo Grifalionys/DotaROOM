@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/strengthFragment">
+    <fragment
+        android:id="@+id/wallpaperFragment"
+        android:name="grifalion.ru.dotaroom.ui.fragments.wallpaper.WallpaperFragment"
+        android:label="fragment_wallpaper"
+        tools:layout="@layout/fragment_wallpaper" >
+        <action
+            android:id="@+id/action_wallpaperFragment_to_wallpaperDetailFragment"
+            app:destination="@id/wallpaperDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="grifalion.ru.dotaroom.ui.fragments.items.ItemFragment"
+        android:label="fragment_item"
+        tools:layout="@layout/fragment_item" />
+    <fragment
+        android:id="@+id/strengthFragment"
+        android:name="grifalion.ru.dotaroom.ui.fragments.heroes.StrengthFragment"
+        android:label="fragment_strength"
+        tools:layout="@layout/fragment_strength" >
+        <action
+            android:id="@+id/action_strengthFragment_to_detailHeroFragment"
+            app:destination="@id/detailHeroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wallpaperDetailFragment"
+        android:name="grifalion.ru.dotaroom.ui.fragments.wallpaper.detail.WallpaperDetailFragment"
+        android:label="WallpaperDetailFragment" >
+        <action
+            android:id="@+id/action_wallpaperDetailFragment_to_wallpaperFragment"
+            app:destination="@id/wallpaperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailHeroFragment"
+        android:name="grifalion.ru.dotaroom.ui.fragments.heroes.DetailHeroFragment"
+        android:label="DetailHeroFragment" >
+        <action
+            android:id="@+id/action_detailHeroFragment_to_strengthFragment"
+            app:destination="@id/strengthFragment" />
+        <action
+            android:id="@+id/action_detailHeroFragment_to_detailAbilitiesFragment"
+            app:destination="@id/detailAbilitiesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailAbilitiesFragment"
+        android:name="grifalion.ru.dotaroom.ui.fragments.heroes.DetailAbilitiesFragment"
+        android:label="DetailAbilitiesFragment" >
+        <action
+            android:id="@+id/action_detailAbilitiesFragment_to_detailHeroFragment"
+            app:destination="@id/detailHeroFragment" />
+    </fragment>
+</navigation>

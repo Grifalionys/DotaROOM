@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "860838022589",
+    "firebase_url": "https://api-project-860838022589-default-rtdb.firebaseio.com",
+    "project_id": "api-project-860838022589",
+    "storage_bucket": "api-project-860838022589.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860838022589:android:38ee7ef79475d3f3c656d4",
+        "android_client_info": {
+          "package_name": "grifalion.ru.dotaroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860838022589-8u1g7ljb3p85ftaacfooc2fo2kgfi3fp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "grifalion.ru.dotaroom",
+            "certificate_hash": "1c2d079e3178c03124dab9dfb4230c564f570f52"
+          }
+        },
+        {
+          "client_id": "860838022589-5lokmka0ronvhm78ps1m9uvf919vg4b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQEMtnI9EOBd2aAwznJAyiLBWH2kc-rkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860838022589-5lokmka0ronvhm78ps1m9uvf919vg4b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

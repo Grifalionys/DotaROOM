@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradient_simple">
+
+    <ImageView
+        android:id="@+id/imIconDesc"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNameDialog"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNameDialog"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameDialog"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvNameDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Aghanim Scepter"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:theme="@style/TextViewWhiteStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCooldownText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Перезарядка:"
+        android:textStyle="bold"
+        android:theme="@style/TextViewWhiteStyle"
+        app:layout_constraintStart_toEndOf="@+id/imIconDesc"
+        app:layout_constraintTop_toBottomOf="@+id/tvManaText"
+        app:srcCompat="@drawable/cooldown" />
+
+    <TextView
+        android:id="@+id/tvManaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Мана:"
+        android:textStyle="bold"
+        android:theme="@style/TextViewWhiteStyle"
+        app:layout_constraintStart_toEndOf="@+id/imIconDesc"
+        app:layout_constraintTop_toTopOf="@+id/imIconDesc"
+        app:srcCompat="@drawable/mana" />
+
+    <TextView
+        android:id="@+id/tvManaDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="14sp"
+        android:theme="@style/TextViewWhiteStyle"
+        app:layout_constraintStart_toEndOf="@+id/tvManaText"
+        app:layout_constraintTop_toTopOf="@+id/tvManaText" />
+
+    <TextView
+        android:id="@+id/tvCooldownDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="14sp"
+        android:theme="@style/TextViewWhiteStyle"
+        app:layout_constraintStart_toEndOf="@+id/tvCooldownText"
+        app:layout_constraintTop_toTopOf="@+id/tvCooldownText" />
+
+    <TextView
+        android:id="@+id/tvDescDialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imIconDesc" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_gradient"
+        android:text="Закрыть"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvDescDialog"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/tvDescDialog"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescDialog"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

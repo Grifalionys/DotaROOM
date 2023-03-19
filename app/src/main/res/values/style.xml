@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="rounded_corner">
+        <item name="cornerSize">20dp</item>
+        <item name="cornerFamily"> rounded</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:shadowColor">#57000000</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowRadius">0.5</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">3</item>
+    </style>
+
+    <style name="rounded_corner_image">
+        <item name="cornerSize">15dp</item>
+    </style>
+
+    <style name="rounded_corner_image2">
+        <item name="cornerSizeBottomLeft">15dp</item>
+        <item name="cornerSizeTopLeft">15dp</item>
+    </style>
+
+<style name="TextView1">
+<item name="android:shadowColor">#57000000</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:shadowRadius">0.5</item>
+    <item name="android:shadowDx">3</item>
+    <item name="android:shadowDy">3</item>
+</style>
+
+
+    <style name="Button.Style1" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">#446ADA</item>
+    </style>
+
+    <style name="TextViewWhiteStyle">
+    <item name="android:shadowColor">#57000000</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:shadowRadius">0.5</item>
+    <item name="android:shadowDx">3</item>
+    <item name="android:shadowDy">3</item>
+</style>
+</resources>

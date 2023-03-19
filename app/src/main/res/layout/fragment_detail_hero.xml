@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/second_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191465"
+    app:defaultNavHost="false"
+    app:navGraph="@navigation/nav_graph"
+    tools:context=".ui.fragments.heroes.DetailHeroFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:foreground="@drawable/view_top_hero_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/hero_intelegence"
+                app:layout_constraintStart_toStartOf="@+id/btnTree"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <Button
+                android:id="@+id/btnAllies"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="84dp"
+                android:background="@drawable/button_gradient"
+                android:text="Союзники"
+                android:textSize="12sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toEndOf="@+id/iconHero"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nameHero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Ancient Appa"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintEnd_toEndOf="@+id/iconHero"
+                app:layout_constraintStart_toStartOf="@+id/iconHero"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iconHero"
+                android:layout_width="140dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="28dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameHero"
+                tools:src="@drawable/download" />
+
+            <TextView
+                android:id="@+id/tvHp"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:background="@color/hp"
+                android:gravity="center"
+                android:text="800"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintEnd_toEndOf="@+id/iconHero"
+                app:layout_constraintStart_toStartOf="@+id/iconHero"
+                app:layout_constraintTop_toBottomOf="@+id/iconHero" />
+
+            <TextView
+                android:id="@+id/tvMana"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:background="@color/mana"
+                android:gravity="center"
+                android:text="200"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintEnd_toEndOf="@+id/tvHp"
+                app:layout_constraintStart_toStartOf="@+id/tvHp"
+                app:layout_constraintTop_toBottomOf="@+id/tvHp" />
+
+            <Button
+                android:id="@+id/btnPick"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/button_gradient"
+                android:text="Контр-пик"
+                android:textSize="12sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintEnd_toEndOf="@+id/btnAllies"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btnAllies"
+                app:layout_constraintTop_toBottomOf="@+id/btnAllies" />
+
+            <Button
+                android:id="@+id/btnThings"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/button_gradient"
+                android:text="Сборка"
+                android:textSize="12sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintEnd_toEndOf="@+id/btnPick"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btnPick"
+                app:layout_constraintTop_toBottomOf="@+id/btnPick" />
+
+            <ImageView
+                android:id="@+id/btnAganim"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="84dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/iconHero"
+                app:layout_constraintHorizontal_bias="0.546"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aganim" />
+
+            <ImageView
+                android:id="@+id/btnShard"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shard"
+                app:layout_constraintEnd_toEndOf="@+id/btnAganim"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btnAganim"
+                app:layout_constraintTop_toBottomOf="@+id/btnAganim" />
+
+            <ImageView
+                android:id="@+id/btnTree"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/talants"
+                app:layout_constraintEnd_toEndOf="@+id/btnShard"
+                app:layout_constraintStart_toStartOf="@+id/btnShard"
+                app:layout_constraintTop_toBottomOf="@+id/btnShard" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/hero_strength"
+                app:layout_constraintStart_toStartOf="@+id/btnTree"
+                app:layout_constraintTop_toBottomOf="@+id/btnTree" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/hero_agility"
+                app:layout_constraintStart_toStartOf="@+id/btnTree"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/tvStrength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:text="16"
+                android:textSize="16sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/tvProtection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="10"
+                android:textSize="14sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+            <TextView
+                android:id="@+id/tvAttack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:text="100-200"
+                android:textSize="14sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/tvProtection" />
+
+            <TextView
+                android:id="@+id/tvSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:text="224"
+                android:textSize="14sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toBottomOf="@+id/tvAttack" />
+
+            <TextView
+                android:id="@+id/tvAgility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:text="35"
+                android:textSize="16sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toBottomOf="@+id/tvStrength" />
+
+            <TextView
+                android:id="@+id/tvIntellect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="22dp"
+                android:text="10"
+                android:textSize="16sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toBottomOf="@+id/tvAgility" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="28dp"
+                android:text="ТИП АТАКИ"
+                android:textSize="20sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintStart_toEndOf="@+id/tvStrength"
+                app:layout_constraintTop_toBottomOf="@+id/tvMana" />
+
+            <TextView
+                android:id="@+id/tvTypeAttack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ближний бой"
+                android:textSize="16sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintEnd_toEndOf="@+id/textView6"
+                app:layout_constraintHorizontal_bias="0.727"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="СЛОЖНОСТЬ"
+                android:textSize="20sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintEnd_toEndOf="@+id/tvTypeAttack"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toStartOf="@+id/tvTypeAttack"
+                app:layout_constraintTop_toBottomOf="@+id/tvTypeAttack" />
+
+            <TextView
+                android:id="@+id/tvComplexity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Легкая"
+                android:textSize="16sp"
+                android:theme="@style/TextViewStyle"
+                app:layout_constraintEnd_toEndOf="@+id/textView8"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/icon_defend"
+                app:layout_constraintStart_toStartOf="@+id/btnThings"
+                app:layout_constraintTop_toBottomOf="@+id/btnThings" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/icon_attack"
+                app:layout_constraintStart_toStartOf="@+id/imageView8"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/icon_boot"
+                app:layout_constraintStart_toStartOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+            <ImageView
+                android:id="@+id/imBackProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/nameHero"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcViewAbilities"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                android:visibility="visible"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvComplexity"
+                app:layout_constraintVertical_bias="1.0"
+                tools:listitem="@layout/item_ability" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcViewAllies"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="32dp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvComplexity"
+                tools:listitem="@layout/item_ally" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcViewItems"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvComplexity"
+                app:spanCount="4"
+                tools:listitem="@layout/item_items" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

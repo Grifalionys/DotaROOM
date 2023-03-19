@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <include
+        android:id="@+id/networkError"
+        layout="@layout/dialog_internet"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></include>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/place_holder"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/nav_graph" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bottom_navigation_view"
+            app:itemIconSize="40dp"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/main_menu">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imHeroes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_hero" />
+
+                <ImageView
+                    android:id="@+id/imWallpaper"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/gallery_icon_im" />
+
+                <ImageView
+                    android:id="@+id/imShop"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imWallpaper"
+                    app:layout_constraintStart_toEndOf="@+id/imHeroes"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/aganim_icon" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

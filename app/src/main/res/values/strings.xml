@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Dota ROOM</string>
+    <string name="sborka">Сборка</string>
+    <string name="friends">Союзники</string>
+    <string name="contrpic">Контр-пик</string>
+    <string name="type_attack">ТИП АТАКИ:</string>
+    <string name="lvl">СЛОЖНОСТЬ:</string>
+    <string name="easy">Легкая</string>
+    <string name="allies">СОЮЗНИКИ</string>
+    <string name="sborka_info">СБОРКА</string>
+    <string name="kontr_pic1">КОНТР-ПИК</string>
+    <string name="aganim_text">Aghanims Scepter</string>
+    <string name="aganim_text_Aganim">Перемещает к выбранному врагу или в выбранную
+        точку иллюзию, которая 7 секунд атакует противников. Эта иллюзия применяет Counterspell одновременно с основным героем. Имеет 3 заряда.
+    \nАнимация применения: 0,2+0,84
+ \nДальность применения: 925/1000/1075/1150 (Талант 1175/1250/1325/1400)
+\nУрон иллюзии: 50%
+ \nУрон по иллюзии: 250%
+ \nДлительность иллюзии: 7
+\nЧисло зарядов: 3
+ \nВремя восстановления заряда: 25</string>
+    <string name="shard_text">Aghanims Shard</string>
+    <string name="shard_text_Shard">Иллюзия от этой способности получает бонусы от улучшения  Counterspell с помощью Aghanims Shard, создавая иллюзии Anti-Mage при успешном отражении способности</string>
+
+
+    <string name="ten">10</string>
+    <string name="fifteen">15</string>
+    <string name="twenty">20</string>
+    <string name="twentyFive">25</string>
+
+
+    <string name="rigth4">+20% к сопротивлению магии от  Counterspell</string>
+    <string name="rigth3">+0,1 к урону за единицу маны от  Mana Void</string>
+    <string name="rigth2">+0,6% к сжигаемой макс. мане от  Mana Break</string>
+    <string name="rigth1">+9 к силе</string>
+
+    <string name="left4">−50 сек. перезарядки  Mana Void</string>
+    <string name="left3">+250 к дальности  Blink</string>
+    <string name="left2">+0,7 сек. оглушения от  Mana Void</string>
+    <string name="left1">−1 перезарядки у  Blink</string>
+
+
+    <string name="antimage">Anti-Mage</string>
+    <string name="antimage_type_attack">Ближний бой</string>
+    <string name="antimage_attack">50-60</string>
+    <string name="antimage_defend">2.8</string>
+    <string name="antimage_speed">325</string>
+    <string name="antimage_strength">22</string>
+    <string name="antimage_agillity">23</string>
+    <string name="antimage_intelligence">18</string>
+    <string name="antimage_ability_name1">MANA BREAK</string>
+    <string name="antimage_ability1">Сжигает ману врага с каждым ударом. Mana Break наносит противнику урон в размере 50% от сожженной маны...</string>
+    <string name="antimage_ability1Full">Сжигает ману врага с каждым ударом. Mana Break наносит противнику урон в размере 50% от сожженной маны.
+</string>
+    <string name="antimage_ability_name2">BLINK</string>
+    <string name="antimage_ability2">Телепортация на короткую дистанцию, позволяющая Anti-Mage врываться в схватку и быстро возвращаться назад...</string>
+    <string name="antimage_ability2Full">Телепортация на короткую дистанцию, позволяющая Anti-Mage врываться в схватку и быстро возвращаться назад.
+\nАнимация применения: 0,4+0,53
+\nДальность применения: Глобальная
+\nМакс. дальность телепортации: 925/1000/1075/1150</string>
+    <string name="antimage_ability_name3">COUNTERSPELL</string>
+    <string name="antimage_ability3">Увеличивает сопротивление магическому урону. Можно применить, чтобы создать вокруг себя противомагический щит...</string>
+    <string name="antimage_ability3Full">Увеличивает сопротивление магическому урону. Можно применить, чтобы создать вокруг себя противомагический щит, который полностью отражает все направленные заклинания обратно во врага.
+</string>
+    <string name="antimage_ability_name4">MANA VOID</string>
+    <string name="antimage_ability4">За каждую отсутствующую у цели единицу маны ей и окружающим противникам наносится урон. Основная цель кратковременно оглушается....</string>
+
+    <string name="antimage_ability4Full">За каждую отсутствующую у цели единицу маны ей и окружающим противникам наносится урон. Основная цель кратковременно оглушается.
+\nАнимация применения: 0,3+0,63
+\nДальность применения: 600
+\nРадиус: 500
+\nУрон за единицу отсутствующей маны: 0,8/0,95/1,1 (Талант 0,9/1,05/1,2)
+\nДлительность оглушения: 0,3 </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="description_items">Этот клинок могут обуздать лишь самые могучие и опытные воины, но владельцу он даёт невероятное проворство в бою.</string>
+
+
+    <string name="wallpaper_succesfull_installed_message">Обои успешно установлены</string>
+    <string name="install_wallpaper_button_text">Установить обои</string>
+    <string name="heroes_button_text">Герои</string>
+    <string name="things_button_text">Предметы</string>
+    <string name="wallpaper_button_text">Обои</string>
+    <string name="weapon_text">Артефакты</string>
+    <string name="items_char">Харки</string>
+    <string name="bonus">БОНУС:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

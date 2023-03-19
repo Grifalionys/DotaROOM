@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:background="#00811D1D">
+
+    <View
+        android:id="@+id/viewAbility1"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:foreground="@drawable/gradient2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgAbility"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/aganim"
+        app:layout_constraintBottom_toBottomOf="@+id/viewAbility1"
+        app:layout_constraintStart_toStartOf="@+id/viewAbility1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/tvNameAbility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:text="MANA BREAK"
+        android:textStyle="bold"
+        android:theme="@style/TextViewStyle"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/imgAbility"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescAbility"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="ewewewewe"
+        android:textSize="10sp"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/viewAbility1"
+        app:layout_constraintStart_toEndOf="@+id/imgAbility"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameAbility" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

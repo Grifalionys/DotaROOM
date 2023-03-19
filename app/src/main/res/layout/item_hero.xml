@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="30dp"
+    android:backgroundTint="#953700B3"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="4dp"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="105dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imIconHero"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/bloodseeker_icon" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="ABADDON"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:theme="@style/TextViewWhiteStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toEndOf="@+id/imIconHero"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imStarEmpty3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toEndOf="@+id/imStarEmtpty2"
+            app:layout_constraintTop_toTopOf="@+id/imStarEmtpty2"
+            app:srcCompat="@drawable/baseline_star_border_24" />
+
+        <ImageView
+            android:id="@+id/imStarEmtpty2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/tvName"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            app:srcCompat="@drawable/baseline_star_border_24" />
+
+        <ImageView
+            android:id="@+id/imStarFill1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imStarEmtpty2"
+            app:layout_constraintTop_toTopOf="@+id/imStarEmtpty2"
+            app:srcCompat="@drawable/baseline_star_24" />
+
+        <ImageView
+            android:id="@+id/imStarFill3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/imStarEmtpty2"
+            app:layout_constraintTop_toTopOf="@+id/imStarEmtpty2"
+            app:srcCompat="@drawable/baseline_star_24" />
+
+        <ImageView
+            android:id="@+id/imStarFill2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/tvName"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            app:srcCompat="@drawable/baseline_star_24" />
+
+        <Button
+            android:id="@+id/imInfoAgilityType"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#C11515"
+            app:layout_constraintStart_toStartOf="@+id/imIconHero"
+            app:layout_constraintTop_toTopOf="@+id/imIconHero" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
